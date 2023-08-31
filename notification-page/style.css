@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.notify-component {
+  padding: 0 2em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4em;
+  width: 100%;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+}
+
+header h1 {
+  display: inline-block;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.count {
+  padding: 0.2em 0.8em;
+  vertical-align: text-bottom;
+  border-radius: 12px;
+  background-color: hsl(219, 85%, 26%);
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+}
+
+.count.empty {
+  content: "";
+  display: none;
+}
+
+.btn-reset {
+  color: hsl(219, 12%, 42%);
+}
+
+main {
+  padding-top: 5em;
+}
+
+.notification {
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  color: hsl(219, 12%, 42%);
+}
+
+.avatar {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.notification div {
+  display: inline-block;
+}
+
+.notification.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.notify-msg.unread:after {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 48px;
+  background-color: hsl(1, 90%, 64%);
+}
+
+.user {
+  font-weight: 800;
+  color: black;
+}
+
+.group {
+  font-weight: 800;
+  color: hsl(219, 85%, 26%);
+}
+
+.post {
+  font-weight: 800;
+}
+
+.private-msg {
+  margin-top: 1em;
+  padding: 1em;
+  border: solid 1px;
+  border-radius: 12px;
+}
+.private-msg:hover {
+  cursor: pointer;
+  background-color: hsl(205, 33%, 90%);
+}
+
+.user-picture {
+  display: inline;
+  float: right;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.btn-reset:hover,
+.user:hover,
+.group:hover,
+.post:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+
+.timer {
+  grid-column-start: 2;
+  color: hsl(219, 14%, 63%);
+}
+
+@media (min-width: 700px) {
+  .notify-component {
+    margin: 4em auto;
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+  }
+  body {
+    background-color: hsl(210, 60%, 98%);
+  }
+  header {
+    padding: 0;
+    position: static;
+  }
+  main {
+    padding-top: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

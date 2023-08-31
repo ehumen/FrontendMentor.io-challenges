@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body>
+<div class="notify-component">
+    <header>
+        <div>
+            <h1>Notifications </h1>
+            <span class="count">3</span>
+        </div>
+        <span class="btn-reset">Mark all as read</span>
+    </header>
+    <main>
+        <section class="notification unread">
+            <div class="avatar">
+                <img src="./assets/images/avatar-mark-webber.webp" alt="ava">
+            </div>
+            <div class="notify-msg unread">
+                <span class="user"> Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span>
+            </div>
+            <p class="timer">1m ago</p>
+        </section>
+        <section class="notification unread">
+            <div class="avatar">
+                <img src="./assets/images/avatar-angela-gray.webp" alt="ava">
+            </div>
+            <div class="notify-msg unread">
+                <span class="user"> Angela Gray</span> followed you
+            </div>
+            <p class="timer">5m ago</p>
+        </section>
+        <section class="notification unread">
+            <div class="avatar">
+                <img src="./assets/images/avatar-jacob-thompson.webp" alt="ava">
+            </div>
+            <div class="notify-msg unread">
+                <span class="user"> Jacob Thompson</span> has joined your group <span class="group">Chess Club</span>
+            </div>
+            <p class="timer">1 day ago</p>
+        </section>
+        <section class="notification ">
+            <div class="avatar">
+                <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="ava">
+            </div>
+            <div class="notify-msg">
+                <span class="user"> Rizky Hasanuddin</span> sent you a private message
+            </div>
+            <p class="timer">5 days ago</p>
+            <p class="private-msg">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks
+                now
+                and I'm already having lots of fun and improving my game.</p>
+        </section>
+        <section class="notification ">
+            <div class="avatar">
+                <img src="./assets/images/avatar-kimberly-smith.webp" alt="ava">
+            </div>
+            <div class="notify-msg">
+                <span class="user"> Kimberly Smith</span> commented on your picture
+            </div>
+            <p class="timer">1 week ago</p>
+            <div class="user-picture">
+                <img src="./assets/images/image-chess.webp" alt="pic">
+            </div>
+        </section>
+        <section class="notification ">
+            <div class="avatar">
+                <img src="./assets/images/avatar-nathan-peterson.webp" alt="ava">
+            </div>
+            <div class="notify-msg">
+                <span class="user"> Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase
+                        your win rate</span>
+            </div>
+            <p class="timer">2 weeks ago</p>
+        </section>
+        <section class="notification ">
+            <div class="avatar">
+                <img src="./assets/images/avatar-anna-kim.webp" alt="ava">
+            </div>
+            <div class="notify-msg">
+                <span class="user"> Anna Kim</span>
+                left the group <span class="group">Chess Club</span>
+            </div>
+            <p class="timer">2 weeks ago</p>
+        </section>
+    </main>
+</div>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Yevhen Humen</a>.
+</footer>
+<script>
+    const rsBtn = document.querySelector(".btn-reset");
+    const countTable = document.querySelector('.count');
+    const notifier = document.querySelectorAll('.notification');
+    const notifyMsg = document.querySelectorAll('.notify-msg');
+
+    rsBtn.addEventListener('click', () => {
+        countTable.classList.add('empty');
+        notifyMsg.forEach((e)=> e.classList.remove('unread'));
+        notifier.forEach((e) => e.classList.remove('unread'));
+    })
+</script>
+</body>
+</html>
