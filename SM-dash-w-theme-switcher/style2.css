@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --increase-stats: hsl(163, 72%, 41%);
+  --decrease-stats: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --YouTube: hsl(348, 97%, 39%);
+  --up: url("./images/icon-up.svg");
+  --down: url("./images/icon-down.svg");
+  font-size: 14px;
+}
+
+* {
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  padding: 2em;
+  background-color: var(--BG);
+}
+
+h2 {
+  margin-top: 1em;
+  font-size: 2em;
+  color: var(--Text-header);
+}
+
+.main {
+  display: grid;
+  color: var(--Text);
+}
+
+.header {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.header p {
+  margin: 1em 0;
+}
+.header h2 {
+  font-size: 1.5em;
+  color: var(--Text-header);
+}
+
+.switcher-box {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  border-top: solid 2px var(--Text);
+}
+
+.switcher {
+  position: relative;
+  width: 4em;
+  height: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 1em;
+  background: var(--Toggle);
+}
+.switcher input[type=radio] {
+  appearance: none;
+}
+.switcher .toggler {
+  position: absolute;
+  transition: 0.5s;
+  top: 0.25em;
+  left: 0.2em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--BG);
+}
+
+#light:checked ~ .toggler {
+  left: 2.2em;
+}
+
+#dark:checked ~ .toggler {
+  left: 0.2em;
+}
+
+.social {
+  display: grid;
+  gap: 2em;
+}
+.social-media {
+  border-radius: 1em;
+  text-align: center;
+  background-color: var(--BG-Card);
+}
+.social-media-count {
+  font-weight: 700;
+  font-size: 5em;
+  color: var(--Text-header);
+}
+
+.nickname {
+  display: inline-flex;
+  align-items: center;
+  margin: 2em 0;
+}
+.nickname img {
+  margin-right: 0.5em;
+}
+
+.instagram,
+.twitter,
+.facebook,
+.youtube {
+  border-radius: 1em 1em 0 0;
+  height: 0.5em;
+  margin-bottom: 1em;
+}
+
+.instagram {
+  background: var(--Instagram);
+}
+
+.facebook {
+  background: var(--Facebook);
+}
+
+.twitter {
+  background: var(--Twitter);
+}
+
+.youtube {
+  background: var(--YouTube);
+}
+
+.followers {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 1em 0;
+}
+
+.dynamic {
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+  color: var(--Text);
+  margin: 1em 0;
+}
+.dynamic img {
+  margin-right: 0.5em;
+}
+
+.up {
+  color: var(--increase-stats);
+}
+
+.down {
+  color: var(--decrease-stats);
+}
+
+.social-media-today {
+  margin: 1em 0;
+  display: grid;
+  grid-gap: 1em;
+}
+
+.today-card {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 0.5em;
+  background: var(--BG-Card);
+}
+
+.today-count {
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--Text-header);
+}
+
+.likes {
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 700px) {
+  :root {
+    font-size: 8px;
+  }
+  .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .social-media-today {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .social {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */

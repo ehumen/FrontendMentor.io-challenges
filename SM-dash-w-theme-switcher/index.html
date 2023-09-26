@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="dark-scheme.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="light-scheme.css" media="(prefers-color-scheme: light)">
+
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body class="body">
+<div class="main-head"></div>
+<main class="main">
+    <div class="header">
+        <div>
+            <h2> Social Media Dashboard</h2>
+            <p> Total Followers: 23,004</p>
+        </div>
+        <div class="switcher-box">
+            <div>Dark Mode</div>
+            <div class="switcher">
+                <input type="radio" name="switcher" id="dark">
+                <input type="radio" name="switcher" id="light">
+                <div class="toggler"></div>
+            </div>
+        </div>
+    </div>
+    <section class="social">
+        <div class="social-media">
+            <div class="facebook"></div>
+            <div class="nickname"><img src="./images/icon-facebook.svg" alt="fb"> @nathanf</div>
+            <div class="social-media-count">1987</div>
+            <div class="followers">Followers</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up"> 12 Today</div>
+        </div>
+        <div class="social-media">
+            <div class="twitter"></div>
+            <div class="nickname"><img src="./images/icon-twitter.svg" alt="tw">@nathanf</div>
+            <div class="social-media-count">1044</div>
+            <div class="followers">Followers</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up"> 99 Today</div>
+        </div>
+        <div class="social-media">
+            <div class="instagram"></div>
+            <div class="nickname"><img src="./images/icon-instagram.svg" alt="inst">@realnathanf</div>
+            <div class="social-media-count">11k</div>
+            <div class="followers">Followers</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up"> 1099 Today</div>
+        </div>
+        <div class="social-media">
+            <div class="youtube"></div>
+            <div class="nickname"><img src="images/icon-youtube.svg" alt="ytb"> Nathan F.</div>
+            <div class="social-media-count">8239</div>
+            <div class="followers">Subscribers</div>
+            <div class="dynamic down"><img src="images/icon-down.svg" alt="down"> 144 Today</div>
+        </div>
+    </section>
+
+    <h2> Overview - Today</h2>
+    <section class="social-media-today">
+        <div class="today-card">
+            <div class="likes">Page Views</div>
+            <img src="./images/icon-facebook.svg">
+            <div class="today-count">87</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up">3%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes"> Likes</div>
+            <img src="./images/icon-facebook.svg">
+            <div class="today-count">52</div>
+            <div class="dynamic down"><img src="images/icon-down.svg" alt="down">2%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes">Likes</div>
+            <img src="./images/icon-instagram.svg" alt="inst">
+            <div class="today-count">5462</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up">2257%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes">Profile Views</div>
+            <img src="./images/icon-instagram.svg" alt="inst">
+            <div class="today-count">52k</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up">1375%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes">Retweets</div>
+            <img src="./images/icon-twitter.svg" alt="tw">
+            <div class="today-count">117</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up">303%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes">Likes</div>
+            <img src="./images/icon-twitter.svg" alt="tw">
+            <div class="today-count">507</div>
+            <div class="dynamic up"><img src="images/icon-up.svg" alt="up">553%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes">Likes</div>
+            <img src="images/icon-youtube.svg" alt="ytb">
+            <div class="today-count">107</div>
+            <div class="dynamic down"><img src="images/icon-down.svg" alt="down">19%</div>
+        </div>
+        <div class="today-card">
+            <div class="likes">Total Views</div>
+            <img src="images/icon-youtube.svg" alt="ytb">
+            <div class="today-count">1407</div>
+            <div class="dynamic down"><img src="images/icon-down.svg" alt="down">12%</div>
+        </div>
+    </section>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>

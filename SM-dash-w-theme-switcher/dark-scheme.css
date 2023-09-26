@@ -1,0 +1,10 @@
+:root {
+  --BG: hsl(230, 17%, 14%);
+  --BG-Top-Pattern: hsl(232, 19%, 15%);
+  --BG-Card: hsl(228, 28%, 20%);
+  --Text: hsl(228, 34%, 66%);
+  --Text-header: hsl(0, 0%, 100%);
+  --Toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+/*# sourceMappingURL=dark-scheme.css.map */
